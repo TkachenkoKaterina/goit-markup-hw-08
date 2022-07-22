@@ -1,0 +1,45 @@
+/* ============= Peculiarities Section =============*/
+
+.peculiarities {
+	display: flex;
+	margin: 0;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #f5f4fa;
+
+		border-radius: 4px;
+		border: 1px solid #f5f4fa;
+		width: 270px;
+		height: 120px;
+	}
+
+	&__list {
+		width: 270px;
+	}
+
+	&__title {
+		margin-top: 30px;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+
+		color: var(--secondary-color);
+	}
+
+	&__text {
+		margin-top: 10px;
+		letter-spacing: 0.03em;
+		line-height: 1.71;
+
+		color: var(--dominant-color);
+	}
+
+	&__list:not(:first-child) {
+		margin-left: 30px;
+	}
+}
