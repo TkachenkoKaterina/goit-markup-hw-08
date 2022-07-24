@@ -25,15 +25,60 @@
 
 		<!--========== Main styles ========== -->
 		<link rel="stylesheet" href="./css/main.min.css" />
-		<link rel="stylesheet" href="./css/styles.css" />		
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<!-- Раздел хедер  -->
 		<header class="header">
-			<div class="container flex">
-				<a class="logo logo-first" href="./index.html">
+			<div class="container flex ">
+				<a class="logo logo-first mobile__logo" href="./index.html">
 					<span></span>Web<span class="logo-second">Studio</span></span>
 				</a>
+				
+				<!-- ======= Mobile btn  -->
+				<button class="mobile-menu__btn" type="button" data-menu-button>
+					<svg class="mobile-menu__icon" width="24" height="16">
+						<use class="mobile-menu__open" href="./images/icons.svg#icon-mobile_menu"></use>
+						<use class="mobile-menu__close" href="./images/icons.svg#icon-mobile_close"></use>
+					</svg>
+				</button>
+				<!-- End Mobile btn =======  -->
+
+				<!-- ======= Mobile menu  -->
+				<div class="mobile-menu" data-menu>
+					<ul class="mobile-menu__nav-list list">
+						<li class="mobile-menu__nav-item">
+							<a href="./index.html" class="mobile-menu__nav-link list current-link">Студия</a>
+						</li>
+						<li class="mobile-menu__nav-item">
+							<a href="./portfolio.html" class="mobile-menu__nav-link list">Портфолио</a>
+						</li>
+						<li class="mobile-menu__nav-item">
+							<a href="" class="mobile-menu__nav-link list">Контакты</a>
+						</li>
+					</ul>
+				
+					<ul class="mobile-menu__contact-list list">
+						<li class="mobile-menu__contact-item">
+							<a href="" class="mobile-menu__contact-link--blue list">+38 096 111 11 11</a>
+						</li>
+						<li class="mobile-menu__contact-item">
+							<a href="" class="mobile-menu__contact-link list">info@devstudio.com</a>
+						</li>
+					</ul>
+				
+					<ul class="mobile-menu__social-list list">
+						<li class="mobile-menu__social-item">
+							<a href="" class="mobile-menu__social-link list">Instagram</a></li>
+						<li class="mobile-menu__social-item">
+							<a href="" class="mobile-menu__social-link list">Twitter</a></li>
+						<li class="mobile-menu__social-item">
+							<a href="" class="mobile-menu__social-link list">Facebook</a></li>
+						<li class="mobile-menu__social-item">
+							<a href="" class="mobile-menu__social-link list">LinkedIn</a></li>
+					</ul>
+				</div>
+				<!-- End Mobile menu =======  -->
 
 				<nav class="nav-header">
 					<ul class="nav-flex">
@@ -49,7 +94,6 @@
 							<a class="contact-link selection" href="mailto:info@devstudio.com"><svg class="icon icon-marg" width="16" height="12">
 									<use href="./images/icons.svg#icon-envelope"></use>
 								</svg>info@devstudio.com
-								
 							</a>
 						</li>
 						<li class="header-contact list">
@@ -85,46 +129,47 @@
 						<label for="name" class="label-form">
 							<span class="text-form">Имя</span>
 						</label>
-						<div class="conteiner-item-form">
-							<input type="text" name="name" id="name" class="input-form appearance-none">
+						<div class="container-item-form">
+							<input type="text" name="name" id="name" class="input-form appearance-none" />
 							<svg class="icon-form" width="12" height="12">
 								<use href="./images/icons-form-opt.svg#icon-form-name"></use>
 							</svg>
 						</div>
-						
+
 						<label for="telephone" class="label-form">
 							<span class="text-form">Телефон</span>
 						</label>
-						<div class="conteiner-item-form">
-							<input type="tel" name="telephone" id="telephone" class="input-form appearance-none">
+						<div class="container-item-form">
+							<input type="tel" name="telephone" id="telephone" class="input-form appearance-none" />
 							<svg class="icon-form" width="13" height="13">
 								<use href="./images/icons-form-opt.svg#icon-form-tel"></use>
 							</svg>
-						</div>	
-						
+						</div>
+
 						<label for="emailto" class="label-form">
 							<span class="text-form">Почта</span>
 						</label>
-						<div class="conteiner-item-form">
-							<input type="email" name="emailto" id="emailto" class="input-form appearance-none">
+						<div class="container-item-form">
+							<input type="email" name="emailto" id="emailto" class="input-form appearance-none" />
 							<svg class="icon-form" width="15" height="12">
 								<use href="./images/icons-form-opt.svg#icon-form-email"></use>
 							</svg>
 						</div>
-						
+
 						<label for="comments" class="label-form">
 							<span class="text-form">Комментарий</span>
 						</label>
 						<textarea class="textarea-form" name="comments" id="comments" placeholder="Введите текст"></textarea>
-						
+
 						<label class="text-form-checkbox">
-							<input type="checkbox" class="input-form-checkbox visually-hidden">
+							<input type="checkbox" class="input-form-checkbox visually-hidden" />
 							<span class="form-checkbox-custom">
 								<svg class="form-checkbox-icon" width="11" height="8">
 									<use href="./images/icons-form-opt.svg#icon-form-checkbox"></use>
 								</svg>
 							</span>
-							Соглашаюсь с рассылкой и принимаю<span class="text-form-blue">Условия договора</span>
+							Соглашаюсь с рассылкой и принимаю
+							<span class="text-form-blue">Условия договора</span>
 						</label>
 
 						<div class="btn-form-total">
@@ -136,7 +181,7 @@
 
 			<!-- Секция Особенности -->
 			<section class="section">
-				<div class="container flex">
+				<div class="container">
 					<h2 hidden>Особенности</h2>
 					<ul class="peculiarities">
 						<li class="peculiarities__list list">
@@ -368,49 +413,49 @@
 				<div class="container">
 					<h2 class="section__title">Постоянные клиенты</h2>
 					<ul class="clients">
-								<li class="clients__list list">
-									<a class="clients__item" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
-										<svg class="icon" width="41" height="47">
-											<use href="./images/icons.svg#icon-yaco"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="clients__list list">
-									<a class="clients__item" href="" target="_blank" rel="noopener noreferer">
-										<svg class="icon" width="40" height="52">
-											<use href="./images/icons.svg#icon-company"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="clients__list list">
-									<a class="clients__item" href="" target="_blank" rel="noopener noreferer">
-										<svg class="icon" width="43" height="41">
-											<use href="./images/icons.svg#icon-company2"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="clients__list list">
-									<a class="clients__item" href="" target="_blank" rel="noopener noreferer">
-										<svg class="icon" width="84" height="41">
-											<use href="./images/icons.svg#icon-foster-peters"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="clients__list list">
-									<a class="clients__item" href="" target="_blank" rel="noopener noreferer">
-										<svg class="icon" width="63" height="45">
-											<use href="./images/icons.svg#icon-brand"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="clients__list list">
-									<a class="clients__item" href="" target="_blank" rel="noopener noreferer">
-										<svg class="icon" width="94" height="44">
-											<use href="./images/icons.svg#icon-tag-line"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
+						<li class="clients__list list">
+							<a class="clients__item" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+								<svg class="icon" width="41" height="47">
+									<use href="./images/icons.svg#icon-yaco"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="clients__list list">
+							<a class="clients__item" href="" target="_blank" rel="noopener noreferer">
+								<svg class="icon" width="40" height="52">
+									<use href="./images/icons.svg#icon-company"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="clients__list list">
+							<a class="clients__item" href="" target="_blank" rel="noopener noreferer">
+								<svg class="icon" width="43" height="41">
+									<use href="./images/icons.svg#icon-company2"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="clients__list list">
+							<a class="clients__item" href="" target="_blank" rel="noopener noreferer">
+								<svg class="icon" width="84" height="41">
+									<use href="./images/icons.svg#icon-foster-peters"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="clients__list list">
+							<a class="clients__item" href="" target="_blank" rel="noopener noreferer">
+								<svg class="icon" width="63" height="45">
+									<use href="./images/icons.svg#icon-brand"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="clients__list list">
+							<a class="clients__item" href="" target="_blank" rel="noopener noreferer">
+								<svg class="icon" width="94" height="44">
+									<use href="./images/icons.svg#icon-tag-line"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</main>
@@ -418,7 +463,7 @@
 		<!-- Секция футер -->
 		<footer class="footer-bg section-footer">
 			<div class="container container-footer ">
-				<div>
+				<div class="container-footer1">
 					<a class="logo-footer logo-first" href="./index.html">
 					<span></span>Web<span class="logo-second-white">Studio</span></span>
 					</a>
@@ -438,8 +483,9 @@
 						</ul>
 					</div>
 				</div>
+
 		<!-- Секция футер-2 -->
-				<div class="container-footer2 ">
+				<div class="container-footer2">
 					<p class="footer-title">присоединяйтесь</p>
 					<ul class="social-link">
 						<li class="social-link__list list-footer list">
@@ -472,6 +518,7 @@
 						</li>
 					</ul>
 				</div>
+
 		<!-- Секция футер-3 -->
 				<div class="container-footer3">
 					<p class="footer-title">Подпишитесь на рассылку</p>
@@ -491,5 +538,6 @@
 			</div>
 		</footer>
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

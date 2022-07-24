@@ -2,7 +2,28 @@
 
 .peculiarities {
 	display: flex;
-	margin: 0;
+	justify-content: center;
+
+	gap: 30px;
+	// margin: 0;
+
+	@media screen and (max-width: 1199px) {
+		flex-wrap: wrap;
+	}
+
+	&__list {
+		@media screen and (min-width: 480px) {
+			width: 450px;
+		}
+
+		@media screen and (min-width: 768px) {
+			width: 354px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: 270px;
+		}
+	}
 
 	&__item {
 		display: flex;
@@ -12,12 +33,21 @@
 
 		border-radius: 4px;
 		border: 1px solid #f5f4fa;
-		width: 270px;
-		height: 120px;
-	}
 
-	&__list {
-		width: 270px;
+		@media screen and (min-width: 480px) {
+			width: 450px;
+			height: 120px;
+		}
+
+		@media screen and (min-width: 768px) {
+			width: 354px;
+			height: 120px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: 270px;
+			height: 120px;
+		}
 	}
 
 	&__title {
@@ -27,6 +57,7 @@
 		line-height: 1.14;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
+		text-align: center;
 
 		color: var(--secondary-color);
 	}
@@ -37,9 +68,5 @@
 		line-height: 1.71;
 
 		color: var(--dominant-color);
-	}
-
-	&__list:not(:first-child) {
-		margin-left: 30px;
 	}
 }
