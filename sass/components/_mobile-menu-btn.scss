@@ -63,6 +63,8 @@
 	transform: translateX(100%);
 	transition: transform var(--main-transition);
 
+	// outline: 5px solid tomato;
+
 	&.is-open {
 		transform: translateX(0);
 	}
