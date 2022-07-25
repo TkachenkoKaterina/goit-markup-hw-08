@@ -653,7 +653,7 @@ a.current-link {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .container-footer1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -667,6 +667,7 @@ a.current-link {
             justify-content: center;
   }
 }
+
 @media screen and (max-width: 767px) {
   .container-footer2 {
     margin: 60px 0;
