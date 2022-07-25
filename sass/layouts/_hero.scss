@@ -60,7 +60,6 @@
 }
 
 .hero-title {
-	width: 360px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
@@ -73,8 +72,17 @@
 
 	color: #ffffff;
 
+	@media screen and (max-width: 479px) {
+		width: 100%;
+	}
+
+	@media screen and (min-width: 480px) {
+		width: 360px;
+	}
+
 	@media screen and (min-width: 1200px) {
 		width: 696px;
+
 		font-size: 44px;
 		line-height: 1.36;
 	}

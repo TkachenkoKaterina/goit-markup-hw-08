@@ -759,7 +759,13 @@ a.current-link {
   display: block;
   outline: none;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .footer-label-form {
+    width: 100%;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 480px) {
   .footer-label-form {
     width: 450px;
     height: 50px;
@@ -1027,7 +1033,6 @@ a.current-link {
 }
 
 .hero-title {
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -1037,6 +1042,16 @@ a.current-link {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (max-width: 479px) {
+  .hero-title {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero-title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
