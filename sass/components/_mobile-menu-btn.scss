@@ -64,6 +64,7 @@
 	transition: transform var(--main-transition);
 
 	// outline: 5px solid tomato;
+	// opacity: 0;
 
 	&.is-open {
 		transform: translateX(0);
